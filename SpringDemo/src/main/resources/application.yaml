@@ -1,32 +1,30 @@
 spring:
   application:
-    name: SpringDemo
+    name: springcode
 
   datasource:
     url: jdbc:h2:mem:springcode_db
     driver-class-name: org.h2.Driver
     username: sa
     password: ""
-  
-  h2:
+
+  h2: 
     console:
       enabled: true
       path: /h2-console
-
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate.format_sql: true
     defer-datasource-initialization: true
 
   security:
-    user: 
+    user:
       name: admin
-      password: admin@123
-
+      password: admin@12345
 
 server:
   port: 8080

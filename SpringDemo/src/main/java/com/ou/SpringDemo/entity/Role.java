@@ -1,4 +1,4 @@
-package com.ou.entity;
+package com.ou.SpringDemo.entity;
 
 public enum Role {
     USER,
